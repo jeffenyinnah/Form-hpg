@@ -26,7 +26,7 @@ def authenticate(username, password):
 # Show login page if not authenticated
 if not st.session_state.authenticated:
     # Logo Placeholder
-    st.image("HPG.png", use_container_width=False)
+    st.image("HPG.png")
     st.title("🔐 Login")
     st.write("Please log in to access the HPG Project Submission Form")
     
@@ -98,7 +98,7 @@ if st.session_state.dark_mode:
 
 
 # Logo Placeholder
-st.image("HPG.png", use_container_width=False)
+st.image("HPG.png")
 
 # Page Title
 st.title("🗂️ HPG Project Submission Form")
