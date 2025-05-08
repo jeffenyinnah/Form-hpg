@@ -9,9 +9,10 @@ from dotenv import load_dotenv
 load_dotenv()
 
 # Authentication configuration
-USERNAME = "hpgcordinator"
+USERNAME = os.getenv("USERNAME")
 # Store password as a hash rather than plaintext
-PASSWORD_HASH = hashlib.sha256("cordin@t0r@2025".encode()).hexdigest()
+PASSWORDLL = os.getenv("PASSWORD")
+PASSWORD_HASH = hashlib.sha256(PASSWORDLL.encode()).hexdigest()
 
 # Check if user is authenticated
 if "authenticated" not in st.session_state:
